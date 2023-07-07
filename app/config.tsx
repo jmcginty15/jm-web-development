@@ -1,10 +1,20 @@
 import { PitchItemProps } from "./components/pitchItem";
 import { ProcessItemProps } from "./components/processItem";
+
 import consultation from "./assets/consultation.jpg";
 import development from "./assets/development.jpg";
 import revision from "./assets/revision.jpg";
 import deployment from "./assets/deployment.jpg";
 import support from "./assets/support.jpg";
+
+import underConstruction from "./assets/underConstruction.jpg";
+import growingResilience from "./assets/growing-resilience.png";
+import mcgintyWedding from "./assets/mcginty-wedding.png";
+import dptTherapy from "./assets/dpttherapy.jpg";
+import jasonMcginty from "./assets/jason-mcginty.png";
+import ironRadio from "./assets/ironradio.jpg";
+import flexChess from "./assets/flexchess.jpg";
+import solarSystemExplorer from "./assets/solar-system-explorer.jpg";
 
 export const ICON_SIZE = 80;
 
@@ -124,5 +134,75 @@ export const processItems: ProcessItemProps[] = [
       "If you choose not to sign up for my subscription, I will hand the hosting account over for you to take care of. Even in this case you're not alone! I'll still be available to answer questions or make updates for an additional fee based on time.",
     ],
     photo: support,
+  },
+];
+
+export interface PortfolioItem {
+  title: string;
+  url: string;
+  description: string;
+  photo: string;
+  id: string;
+}
+
+export const portfolioItems: PortfolioItem[] = [
+  {
+    title: "Your Site Here",
+    url: "",
+    description: "Your site could be next. Get started now.",
+    photo: underConstruction,
+    id: "your-site-here",
+  },
+  {
+    title: "Growing Resilience Permaculture",
+    url: "https://growingresilience.co/",
+    description:
+      "Responsive business web site for Growing Resilience Permaculture, LLC, a permaculture design and garden consultation business based in Eastern Washington. Deployed with Azure Cloud Services. Parses RSS feed from Libsyn to serve podcast episode data.",
+    photo: growingResilience,
+    id: "growing-resilience-permaculture",
+  },
+  {
+    title: "McGinty Wedding",
+    url: "http://mcgintywedding.com/",
+    description: `Responsive single-page React site I built for my wedding! I got married on February 5, 2023. Uses Google Sheets to keep track of RSVPs via the <a href="https://sheet.best/" target="_blank" rel="noreferrer">Sheet Best API</a>. Uses Google Maps React component to embed maps to relevant locations.`,
+    photo: mcgintyWedding,
+    id: "mcginty-wedding",
+  },
+  {
+    title: "DPT Therapy & Performance",
+    url: "https://dpttherapy.com/",
+    description:
+      "Responsive business web site for DPT Therapy & Performance, PLLC, a physical therapy clinic based in Stephenville, Texas. Deployed with Azure Cloud Services. Uses Google Maps React component to embed map of clinic location.",
+    photo: dptTherapy,
+    id: "dpt-therapy-and-performance",
+  },
+  {
+    title: "Jason McGinty",
+    url: "http://jasonmcginty.net",
+    description: `My personal web site and blog which I built years ago using a <a href="https://www.gatsbyjs.com/" target="_blank" rel="noreferrer">Gatsby</a> template. Companion to this site, and the place where I post extra little projects and musings about literature.`,
+    photo: jasonMcginty,
+    id: "jason-mcginty",
+  },
+  {
+    title: "IronRadio",
+    url: "https://ironradio.org",
+    description:
+      "Podcast hosting site built for a local Topeka, Kansas gym owner and strength coach. Hosts and serves RSS feed and MP3 files for use by podcatchers. Deployed with Microsoft Azure Cloud Services.",
+    photo: ironRadio,
+    id: "iron-radio",
+  },
+  {
+    title: "FlexChess",
+    url: "https://flexchess.surge.sh/",
+    description: `Browser application built to allow users to create, run, and play in online chess tournaments on their own schedule. Uses the <a href="https://lichess.org/api" target="_blank" rel="noreferrer">Lichess.org API</a> to query player rating information and report game results.`,
+    photo: flexChess,
+    id: "flex-chess",
+  },
+  {
+    title: "Solar System Explorer",
+    url: "https://solar-system-simulator.herokuapp.com/",
+    description: `Browser application built to realistically depict the motions of the planets and moons of our solar system. Queries <a href="https://ssd.jpl.nasa.gov/" target="_blank" rel="noreferrer">NASA's JPL Horizons database</a> for real positions and velocities of solar system bodies at a selected date and time, then uses Newtonian physics to simulate motions of the bodies in space.`,
+    photo: solarSystemExplorer,
+    id: "solar-system-explorer",
   },
 ];
