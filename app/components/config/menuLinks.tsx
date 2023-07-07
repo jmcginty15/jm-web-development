@@ -4,21 +4,16 @@ export const indexMenuLinks = [
     link: "/about",
     icon: "user-tie",
   },
-  // {
-  //   name: "Projects",
-  //   link: "/#projects",
-  //   icon: "terminal",
-  // },
-  // {
-  //   name: "Blog",
-  //   link: "/#blog",
-  //   icon: "feather-alt",
-  // },
-  // {
-  //   name: "Contact",
-  //   link: "/#contact",
-  //   icon: "envelope",
-  // },
+  {
+    name: "My Process",
+    link: "/process",
+    icon: "flowchart",
+  },
+  {
+    name: "Portfolio",
+    link: "/portfolio",
+    icon: "code",
+  },
 ];
 
 export const blogMenuLinks = [

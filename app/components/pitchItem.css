@@ -9,6 +9,15 @@
   border-radius: var(--radius);
   padding: 1.5rem;
   text-align: center;
+  transition: 0.25s;
+}
+
+.PitchItem:hover {
+  cursor: pointer;
+  transform: scale(1.05, 1.05);
+  transition: 0.25s;
+  border: solid var(--primary-color) 1px;
+  background-color: black;
 }
 
 .PitchItem-icon {

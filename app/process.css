@@ -1,0 +1,167 @@
+.Process-banner {
+  height: calc(65vh - 2 * var(--header-height));
+  width: 100vw;
+  font-family: "Ubuntu Mono", monospace;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Process-overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-content-color-transparent);
+}
+
+.Process-content {
+  height: fit-content;
+  width: 85%;
+  color: var(--primary-color);
+}
+
+.Process-content-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+  text-align: center;
+}
+
+.Process-title {
+  font-family: "Poppins", sans-serif;
+  margin: var(--space);
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.Process-subtitle {
+  margin: auto;
+  margin-bottom: calc(var(--space));
+}
+
+.Process-logo {
+  width: 85%;
+  color: var(--primary-color);
+  margin: auto;
+  margin-bottom: calc(var(--space) * 1.5);
+}
+
+.Process-highlight {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.Process-tagline {
+  font-size: 18px;
+}
+
+.Process-title-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+#Process-down-arrow {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  animation-name: downarrow;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+#Process-down-arrow:hover {
+  cursor: pointer;
+  animation: none;
+  color: var(--secondary-color);
+  font-size: 84px;
+  bottom: 6px;
+}
+
+@keyframes downarrow {
+  0% {
+    color: var(--title-color);
+    font-size: 80px;
+    bottom: 10px;
+  }
+
+  50% {
+    color: var(--primary-color);
+    font-size: 82px;
+    bottom: 8px;
+  }
+
+  100% {
+    color: var(--title-color);
+    font-size: 80px;
+    bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .Process-logo {
+    width: 40%;
+    margin-bottom: calc(var(--space) / 2);
+  }
+
+  .Process-title {
+    font-size: 48px;
+  }
+
+  .Process-subtitle {
+    margin-bottom: calc(var(--space) * 0.5);
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .Process-banner {
+    height: calc(65vh - var(--header-height));
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .Process-title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .Process-title {
+    font-size: 28px;
+  }
+
+  .Process-tagline {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-height: 700px) {
+  .Process-content {
+    padding: 30px 0;
+  }
+
+  .Process-content-inner {
+    max-width: 100%;
+  }
+
+  .Process-logo {
+    width: 30%;
+    margin-bottom: calc(var(--space) * 0.35);
+  }
+
+  .Process-title {
+    font-size: 36px;
+  }
+
+  .Process-subtitle {
+    margin-bottom: calc(var(--space) * 0.35);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Process-title {
+    font-size: 48px;
+  }
+}

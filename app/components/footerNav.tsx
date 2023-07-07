@@ -1,6 +1,4 @@
 import { Link } from "@remix-run/react";
-import PropTypes from "prop-types";
-import React from "react";
 import Icon from "./icon";
 import IndexNumber from "./indexNumber";
 

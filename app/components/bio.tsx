@@ -17,7 +17,7 @@ export default function Bio() {
         <p className="Bio-text">
           My software education started during college, where I earned a BS in
           Systems Engineering from the US Naval Academy. From the foundation of
-          coding skills I build there, I returned to the software world several
+          coding skills I built there, I returned to the software world several
           years later by completing the{" "}
           <a
             className="Bio-link"

@@ -1,4 +1,10 @@
 import { PitchItemProps } from "./components/pitchItem";
+import { ProcessItemProps } from "./components/processItem";
+import consultation from "./assets/consultation.jpg";
+import development from "./assets/development.jpg";
+import revision from "./assets/revision.jpg";
+import deployment from "./assets/deployment.jpg";
+import support from "./assets/support.jpg";
 
 export const ICON_SIZE = 80;
 
@@ -48,7 +54,7 @@ export const pitchItems: PitchItemProps[] = [
     longDescription: [
       "Take as much or as little control over the design and development process as you want. Tell me nothing but your business name and industry and let me run with it, give me fully fleshed out mockups of your site to work from, or anything in between.",
       "My goal is to satisfy you, the customer. If you already have a very concrete vision of what you want your site to look like, I'm happy to simply implement that for you. On the other hand, I can come up with my own ideas and design your site completely myself. Every step of the way, the choice is yours as to how much involvement you want.",
-      "Branding materials are the same way. You can provide me with your own photos, logos, color scheme, etc., or you can have me create these things. Some clients have me find royalty-free stock photos to use on their sites, or I can organize professional photos to be taken of your business, property, or products.",
+      "Branding materials are the same way. You can provide me with your own photos, logos, color scheme, etc., or you can have me create these things. Some clients have me find royalty-free stock photos to use on their sites, or I can organize professional photos to be taken of your business, property, or products. It all depends on what you want and what fits your budget.",
     ],
   },
   {
@@ -73,5 +79,50 @@ export const pitchItems: PitchItemProps[] = [
       "I offer options for ongoing support with hosting, maintenance, and additional features once initial development is complete. Let me handle all the technical details of adding or updating content, while you focus on serving your customers.",
       "Every website has ongoing costs for server resources associated with hosting. I offer a monthly subscription that not only covers this cost, but also includes minor updates such as changing a logo, adding new photos, or highlighting a limited time promotion. This is optional but highly recommended, especially if you know you will have plenty of updates to make in the future.",
     ],
+  },
+];
+
+export const processItems: ProcessItemProps[] = [
+  {
+    title: "Consultation",
+    description: [
+      "Together, we'll dive into your business, goals, and target audience, gathering vital information to shape the design and functionality of your website. Understanding your unique needs is the first step towards creating a site that truly represents your brand.",
+      "To make the most of our time together, think a bit beforehand about your vision for your site. If you already have branding materials such as photos, logos, or color schemes, you can give those to me at this point, although you can also send them at any point in the process before Deployment.",
+      "My initial consultations are always free and come with no obligation. We can conduct our consultation by phone or video chat, or even in person if you're in the Tulsa area.",
+    ],
+    photo: consultation,
+  },
+  {
+    title: "Development",
+    description: [
+      "With your vision in mind, I'll craft an initial design for your website, bringing creativity and expertise to deliver an engaging user experience. This stage involves transforming ideas into a tangible digital presence, ensuring your website reflects your brand identity.",
+      "At the end of this stage, I will deploy the initial design to a staging URL where you will be able to view it and give feedback. Then we'll move on to the third stage, Revision.",
+    ],
+    photo: development,
+  },
+  {
+    title: "Revision",
+    description: [
+      "Your feedback is essential. I value your input and will work closely with you to make revisions and refinements, ensuring the design, content, and functionality align with your expectations. This collaborative approach guarantees a website that captures your vision.",
+      "There is no rush to the revision process. We can spend as much time as we need to ensure the design meets your expectations and reflects your vision for your brand.",
+    ],
+    photo: revision,
+  },
+  {
+    title: "Deployment",
+    description: [
+      "It's time to showcase your website to the world! I'll handle the technical aspects of launching your site, ensuring a seamless transition to your chosen domain. With meticulous attention to detail, I'll make sure everything is in place for a successful go-live.",
+      "If you already own a domain name, during this stage I'll ask you for the information and access I'll need to point it to your site. If you don't already own a domain you can have me purchase one for you; in this case I recommend that you come up with 2-3 options in case your first choice is already taken or prohibitively expensive to buy.",
+    ],
+    photo: deployment,
+  },
+  {
+    title: "Support",
+    description: [
+      "Building a website is just the beginning of our partnership. I offer ongoing support and maintenance, to include hosting and minor updates, with my subscription service. With regular updates, security measures, and dependable assistance, I'll ensure your site remains in peak condition, allowing you to focus on your business while I handle the technical aspects.",
+      "My subscription is completely optional, but I do highly recommend it, especially if you know up front that you will need to make regular content updates to your site. I can handle all the technical details of your updates for a flat monthly fee.",
+      "If you choose not to sign up for my subscription, I will hand the hosting account over for you to take care of. Even in this case you're not alone! I'll still be available to answer questions or make updates for an additional fee based on time.",
+    ],
+    photo: support,
   },
 ];

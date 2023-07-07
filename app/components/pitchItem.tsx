@@ -1,4 +1,4 @@
-import { Link } from "@remix-run/react";
+import { useNavigate } from "@remix-run/react";
 import IconSwitch from "~/assets/iconSwitch";
 
 export interface PitchItemProps {
@@ -21,16 +21,15 @@ export default function PitchItem({
   iconName,
   route,
 }: PitchItemProps) {
+  const navigate = useNavigate();
+
   return (
-    <div className="PitchItem">
+    <div className="PitchItem" onClick={() => navigate(`/about?item=${route}`)}>
       <div className="PitchItem-icon">
         <IconSwitch iconName={iconName} />
       </div>
       <h2 className="PitchItem-title">{title}</h2>
       <p className="PitchItem-text">{description}</p>
-      <a className="PitchItem-button" href={`/about?item=${route}`}>
-        Learn more
-      </a>
     </div>
   );
 }

@@ -5,6 +5,8 @@ import {
   RiTerminalFill,
   RiQuillPenFill,
   RiMailFill,
+  RiFlowChart,
+  RiCodeSSlashFill,
 } from "react-icons/ri";
 
 interface IconProps {
@@ -25,6 +27,10 @@ export default function Icon({ iconName }: IconProps) {
       return <RiQuillPenFill id="blog" />;
     case "envelope":
       return <RiMailFill id="contact" />;
+    case "flowchart":
+      return <RiFlowChart id="process" />;
+    case "code":
+      return <RiCodeSSlashFill id="portfolio" />;
     default:
       return <div />;
   }
