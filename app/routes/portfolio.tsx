@@ -8,12 +8,14 @@ import styles from "../portfolio.css";
 import stylesProcessItem from "../components/processItem.css";
 import stylesAboutBio from "../components/aboutBio.css";
 import stylesHalfBanner from "../components/halfBanner.css";
+import stylesPortfolioItem from "../components/portfolioItem.css";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
   { rel: "stylesheet", href: stylesProcessItem },
   { rel: "stylesheet", href: stylesAboutBio },
   { rel: "stylesheet", href: stylesHalfBanner },
+  { rel: "stylesheet", href: stylesPortfolioItem },
 ];
 
 export const meta: V2_MetaFunction = () => [

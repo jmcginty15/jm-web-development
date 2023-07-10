@@ -16,6 +16,14 @@ import ironRadio from "./assets/ironradio.jpg";
 import flexChess from "./assets/flexchess.jpg";
 import solarSystemExplorer from "./assets/solar-system-explorer.jpg";
 
+import growingResilienceFull from "./assets/growing-resilience-full.png";
+import mcgintyWeddingFull from "./assets/mcginty-wedding-full.png";
+import dptTherapyFull from "./assets/dpt-therapy-full.png";
+import jasonMcgintyFull from "./assets/jason-mcginty-full.png";
+import ironRadioFull from "./assets/iron-radio-full.png";
+import flexChessFull from "./assets/flexchess-full.png";
+import solarSystemExplorerFull from "./assets/solar-system-explorer-full.png";
+
 export const ICON_SIZE = 80;
 
 export const PERSONAL_URL = "http://jasonmcginty.net";
@@ -137,20 +145,22 @@ export const processItems: ProcessItemProps[] = [
   },
 ];
 
-export interface PortfolioItem {
+export interface PortfolioItemType {
   title: string;
   url: string;
   description: string;
   photo: string;
+  detailPhoto: string;
   id: string;
 }
 
-export const portfolioItems: PortfolioItem[] = [
+export const portfolioItems: PortfolioItemType[] = [
   {
     title: "Your Site Here",
     url: "",
     description: "Your site could be next. Get started now.",
     photo: underConstruction,
+    detailPhoto: "",
     id: "your-site-here",
   },
   {
@@ -159,6 +169,7 @@ export const portfolioItems: PortfolioItem[] = [
     description:
       "Responsive business web site for Growing Resilience Permaculture, LLC, a permaculture design and garden consultation business based in Eastern Washington. Deployed with Azure Cloud Services. Parses RSS feed from Libsyn to serve podcast episode data.",
     photo: growingResilience,
+    detailPhoto: growingResilienceFull,
     id: "growing-resilience-permaculture",
   },
   {
@@ -166,6 +177,7 @@ export const portfolioItems: PortfolioItem[] = [
     url: "http://mcgintywedding.com/",
     description: `Responsive single-page React site I built for my wedding! I got married on February 5, 2023. Uses Google Sheets to keep track of RSVPs via the <a href="https://sheet.best/" target="_blank" rel="noreferrer">Sheet Best API</a>. Uses Google Maps React component to embed maps to relevant locations.`,
     photo: mcgintyWedding,
+    detailPhoto: mcgintyWeddingFull,
     id: "mcginty-wedding",
   },
   {
@@ -174,6 +186,7 @@ export const portfolioItems: PortfolioItem[] = [
     description:
       "Responsive business web site for DPT Therapy & Performance, PLLC, a physical therapy clinic based in Stephenville, Texas. Deployed with Azure Cloud Services. Uses Google Maps React component to embed map of clinic location.",
     photo: dptTherapy,
+    detailPhoto: dptTherapyFull,
     id: "dpt-therapy-and-performance",
   },
   {
@@ -181,6 +194,7 @@ export const portfolioItems: PortfolioItem[] = [
     url: "http://jasonmcginty.net",
     description: `My personal web site and blog which I built years ago using a <a href="https://www.gatsbyjs.com/" target="_blank" rel="noreferrer">Gatsby</a> template. Companion to this site, and the place where I post extra little projects and musings about literature.`,
     photo: jasonMcginty,
+    detailPhoto: jasonMcgintyFull,
     id: "jason-mcginty",
   },
   {
@@ -189,6 +203,7 @@ export const portfolioItems: PortfolioItem[] = [
     description:
       "Podcast hosting site built for a local Topeka, Kansas gym owner and strength coach. Hosts and serves RSS feed and MP3 files for use by podcatchers. Deployed with Microsoft Azure Cloud Services.",
     photo: ironRadio,
+    detailPhoto: ironRadioFull,
     id: "iron-radio",
   },
   {
@@ -196,6 +211,7 @@ export const portfolioItems: PortfolioItem[] = [
     url: "https://flexchess.surge.sh/",
     description: `Browser application built to allow users to create, run, and play in online chess tournaments on their own schedule. Uses the <a href="https://lichess.org/api" target="_blank" rel="noreferrer">Lichess.org API</a> to query player rating information and report game results.`,
     photo: flexChess,
+    detailPhoto: flexChessFull,
     id: "flex-chess",
   },
   {
@@ -203,6 +219,7 @@ export const portfolioItems: PortfolioItem[] = [
     url: "https://solar-system-simulator.herokuapp.com/",
     description: `Browser application built to realistically depict the motions of the planets and moons of our solar system. Queries <a href="https://ssd.jpl.nasa.gov/" target="_blank" rel="noreferrer">NASA's JPL Horizons database</a> for real positions and velocities of solar system bodies at a selected date and time, then uses Newtonian physics to simulate motions of the bodies in space.`,
     photo: solarSystemExplorer,
+    detailPhoto: solarSystemExplorerFull,
     id: "solar-system-explorer",
   },
 ];

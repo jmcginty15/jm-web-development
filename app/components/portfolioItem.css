@@ -2,9 +2,8 @@
   display: flex;
   flex-flow: column;
   grid-template-columns: 100%;
-  /* height: 70vh; */
-  height: 100%;
   align-content: baseline;
+  height: fit-content;
   background-color: var(--bg-color);
   border-radius: var(--radius);
   text-align: center;
@@ -12,7 +11,11 @@
   box-shadow: 1px 1px 8px black;
 }
 
-.PortfolioItem:hover {
+.PortfolioItem-clickable {
+  height: 100%;
+}
+
+.PortfolioItem-clickable:hover {
   cursor: pointer;
   transform: scale(1.05, 1.05);
   transition: 0.25s;

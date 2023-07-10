@@ -48,6 +48,7 @@
 .Bio-button:hover {
   cursor: pointer;
   background-color: var(--secondary-color);
+  transition: 0.25s;
 }
 
 @media screen and (min-width: 960px) {
