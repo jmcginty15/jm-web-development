@@ -4,7 +4,7 @@ import type {
   V2_MetaFunction,
 } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { RiArrowRightSLine, RiArrowDownSLine } from "react-icons/ri";
 import TabLayout from "~/components/tabLayout";
 import AboutBio from "~/components/aboutBio";
@@ -48,13 +48,12 @@ export default function Route() {
   const tabRef = useRef<HTMLDivElement>(null);
   const bioRef = useRef<HTMLDivElement>(null);
 
-  if (data && typeof window !== "undefined")
-    setTimeout(() => {
-      if (typeof data === "string")
-        bioRef.current!.scrollIntoView({ behavior: "smooth", block: "center" });
-      else
-        tabRef.current!.scrollIntoView({ behavior: "smooth", block: "center" });
-    }, 50);
+  useEffect(() => {
+    if (typeof data === "string")
+      bioRef.current!.scrollIntoView({ behavior: "smooth", block: "center" });
+    else
+      tabRef.current!.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, []);
 
   const goToItem = typeof data === "string" ? null : data;
 

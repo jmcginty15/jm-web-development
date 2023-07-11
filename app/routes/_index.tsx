@@ -1,4 +1,8 @@
-import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
+import type {
+  LinksFunction,
+  LoaderFunction,
+  V2_MetaFunction,
+} from "@remix-run/node";
 import { useRef } from "react";
 import Pitch from "../components/pitch";
 import Bio from "~/components/bio";
@@ -13,8 +17,7 @@ import stylesContactForm from "../components/contactForm.css";
 import stylesPitch from "../components/pitch.css";
 import stylesPitchItem from "../components/pitchItem.css";
 import stylesBio from "../components/bio.css";
-
-import { useOptionalUser } from "~/utils";
+import { useLoaderData } from "@remix-run/react";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
@@ -32,8 +35,17 @@ export const meta: V2_MetaFunction = () => [
   },
 ];
 
+export const loader: LoaderFunction = () => {
+  return {
+    serviceId: process.env.SERVICE_ID,
+    templateId: process.env.TEMPLATE_ID,
+    userId: process.env.USER_ID,
+  };
+};
+
 export default function Index() {
   const ref = useRef<HTMLDivElement>(null);
+  const keys = useLoaderData();
 
   const scrollDown = () => {
     ref.current!.scrollIntoView();
@@ -72,7 +84,7 @@ export default function Index() {
       </div>
       <Pitch refProp={ref} />
       <Bio />
-      <ContactForm />
+      <ContactForm keys={keys} />
     </main>
   );
 }

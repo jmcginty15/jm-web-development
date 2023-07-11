@@ -5,7 +5,7 @@ export default function PortfolioIndexPage() {
   return (
     <div className="Portfolio-index">
       {portfolioItems.map((item) => (
-        <PortfolioItem item={item} clickable />
+        <PortfolioItem key={item.id} item={item} clickable />
       ))}
     </div>
   );

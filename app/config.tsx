@@ -147,7 +147,7 @@ export const processItems: ProcessItemProps[] = [
 
 export interface PortfolioItemType {
   title: string;
-  url: string;
+  url?: string;
   description: string;
   photo: string;
   detailPhoto: string;
@@ -157,7 +157,6 @@ export interface PortfolioItemType {
 export const portfolioItems: PortfolioItemType[] = [
   {
     title: "Your Site Here",
-    url: "",
     description: "Your site could be next. Get started now.",
     photo: underConstruction,
     detailPhoto: "",

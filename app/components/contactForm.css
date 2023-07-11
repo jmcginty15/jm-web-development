@@ -54,6 +54,28 @@ h3.ContactForm-title {
   font-size: 20px;
 }
 
+.ContactForm-radio-group {
+  display: grid;
+  grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+  color: var(--title-color);
+  margin-top: 0.5rem;
+}
+
+.ContactForm-required {
+  color: red;
+}
+
+.ContactForm-error {
+  font-size: 14px;
+  padding: 0.25rem 0.5rem;
+  font-style: italic;
+  background-color: pink;
+  color: red;
+  border-radius: var(--radius);
+  border: solid 0.5px red;
+  margin-bottom: 1rem;
+}
+
 .ContactForm-upper {
   display: grid;
   grid-template-columns: 47% 47%;

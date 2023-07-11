@@ -28,9 +28,13 @@ export default function PortfolioItem({
       />
       <div className="PortfolioItem-content">
         <h2 className="PortfolioItem-title">
-          <a href={item.url} target="_blank" rel="noreferrer">
-            {title}
-          </a>
+          {item.url ? (
+            <a href={item.url} target="_blank" rel="noreferrer">
+              {title}
+            </a>
+          ) : (
+            title
+          )}
         </h2>
         <p
           className="PortfolioItem-text"
