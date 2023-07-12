@@ -32,7 +32,10 @@ export const links: LinksFunction = () => [
 export const meta: V2_MetaFunction = () => [
   {
     title: "JM Web Development LLC | Tulsa, Oklahoma | Topeka, Kansas",
-    description:
+  },
+  {
+    name: "description",
+    content:
       "Web development, SEO, and online marketing services for small businesses.",
   },
 ];
