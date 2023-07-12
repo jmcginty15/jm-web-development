@@ -12,6 +12,7 @@ import topeka from "../assets/topeka-ks.jpg";
 import tulsa from "../assets/tulsa-ok.jpg";
 import Logo from "~/assets/logo";
 import { pitchItems } from "~/config";
+import { MAIN_URL } from "../config";
 
 import styles from "../about.css";
 import stylesTabLayout from "../components/tabLayout.css";
@@ -23,6 +24,7 @@ export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesTabLayout },
   { rel: "stylesheet", href: stylesPitchItemFull },
   { rel: "stylesheet", href: stylesAboutBio },
+  { rel: "canonical", href: `${MAIN_URL}/about` },
 ];
 
 export const meta: V2_MetaFunction = () => [

@@ -28,6 +28,8 @@ export const ICON_SIZE = 80;
 
 export const PERSONAL_URL = "http://jasonmcginty.net";
 
+export const MAIN_URL = "https://jmwebdevelopment.net";
+
 export const pitchItems: PitchItemProps[] = [
   {
     title: "Personal Touch",

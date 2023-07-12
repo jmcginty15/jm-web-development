@@ -11,13 +11,14 @@ import computer from "../assets/computer.jpg";
 import logo from "~/assets/logo.png";
 import { PERSONAL_URL } from "~/config";
 import { RiArrowDownSLine } from "react-icons/ri";
+import { useLoaderData } from "@remix-run/react";
+import { MAIN_URL } from "../config";
 
 import styles from "../_index.css";
 import stylesContactForm from "../components/contactForm.css";
 import stylesPitch from "../components/pitch.css";
 import stylesPitchItem from "../components/pitchItem.css";
 import stylesBio from "../components/bio.css";
-import { useLoaderData } from "@remix-run/react";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: styles },
@@ -25,6 +26,7 @@ export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesPitch },
   { rel: "stylesheet", href: stylesPitchItem },
   { rel: "stylesheet", href: stylesBio },
+  { rel: "canonical", href: MAIN_URL },
 ];
 
 export const meta: V2_MetaFunction = () => [

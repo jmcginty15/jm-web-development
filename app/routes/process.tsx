@@ -8,6 +8,7 @@ import processPhoto from "../assets/process.jpg";
 import HalfBanner from "~/components/halfBanner";
 import ProcessTabLayout from "~/components/processTabLayout";
 import ContactForm from "~/components/contactForm";
+import { MAIN_URL } from "../config";
 
 import stylesProcessTabLayout from "../components/processTabLayout.css";
 import stylesProcessItem from "../components/processItem.css";
@@ -22,6 +23,7 @@ export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesAboutBio },
   { rel: "stylesheet", href: stylesContactForm },
   { rel: "stylesheet", href: stylesHalfBanner },
+  { rel: "canonical", href: `${MAIN_URL}/process` },
 ];
 
 export const meta: V2_MetaFunction = () => [

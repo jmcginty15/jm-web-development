@@ -9,7 +9,6 @@ export const loader = async ({ params }: LoaderArgs) => {
 
 export default function PortfolioItemDetail() {
   const item = useLoaderData();
-  console.log(item);
 
   return (
     <div className="PortfolioItemDetail">
