@@ -17,6 +17,8 @@ main {
 
 .Banner-overlay {
   position: relative;
+  display: flex;
+  justify-content: center;
   height: 100%;
   width: 100%;
   background-color: var(--bg-content-color-transparent);
@@ -24,10 +26,6 @@ main {
 }
 
 .Banner-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -55%);
   height: fit-content;
   text-align: center;
   width: 85%;
@@ -76,7 +74,7 @@ main {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  animation-name: downarrow;
+  animation-name: downarrowlow;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
@@ -87,26 +85,6 @@ main {
   color: var(--secondary-color);
   font-size: 84px;
   bottom: 6px;
-}
-
-@keyframes downarrow {
-  0% {
-    color: var(--title-color);
-    font-size: 80px;
-    bottom: 10px;
-  }
-
-  50% {
-    color: var(--primary-color);
-    font-size: 82px;
-    bottom: 8px;
-  }
-
-  100% {
-    color: var(--title-color);
-    font-size: 80px;
-    bottom: 10px;
-  }
 }
 
 @media screen and (min-width: 650px) {
@@ -122,6 +100,12 @@ main {
 
   .Banner-subtitle {
     margin-bottom: calc(var(--space) * 0.5);
+  }
+
+  #down-arrow {
+    animation: downarrow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
   }
 }
 
@@ -168,5 +152,45 @@ main {
 
   .Banner-subtitle {
     margin-bottom: calc(var(--space) * 0.35);
+  }
+}
+
+@keyframes downarrow {
+  0% {
+    color: var(--title-color);
+    font-size: 80px;
+    bottom: 10px;
+  }
+
+  50% {
+    color: var(--primary-color);
+    font-size: 82px;
+    bottom: 8px;
+  }
+
+  100% {
+    color: var(--title-color);
+    font-size: 80px;
+    bottom: 10px;
+  }
+}
+
+@keyframes downarrowlow {
+  0% {
+    color: var(--title-color);
+    font-size: 80px;
+    bottom: 0px;
+  }
+
+  50% {
+    color: var(--primary-color);
+    font-size: 82px;
+    bottom: 2px;
+  }
+
+  100% {
+    color: var(--title-color);
+    font-size: 80px;
+    bottom: 0px;
   }
 }
