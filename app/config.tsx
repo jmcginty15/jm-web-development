@@ -29,6 +29,8 @@ export const ICON_SIZE = 80;
 export const PERSONAL_URL = "http://jasonmcginty.net";
 
 export const MAIN_URL = "https://jmwebdevelopment.net";
+export const BASE_META_DESCRIPTION =
+  "Web development, SEO, and online marketing services for small businesses.";
 
 export const pitchItems: PitchItemProps[] = [
   {

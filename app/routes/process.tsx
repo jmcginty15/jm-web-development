@@ -34,7 +34,7 @@ export const meta: V2_MetaFunction = () => [
   {
     name: "description",
     content:
-      "Web development, SEO, and online marketing services for small businesses.",
+      "Explore my collaborative process from consultation to support. Seamless communication, customized solutions, and a website that reflects your vision. Unlock your online success with me.",
   },
 ];
 

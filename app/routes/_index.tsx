@@ -12,7 +12,7 @@ import logo from "~/assets/logo.png";
 import { PERSONAL_URL } from "~/config";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { useLoaderData } from "@remix-run/react";
-import { MAIN_URL } from "../config";
+import { MAIN_URL, BASE_META_DESCRIPTION } from "../config";
 
 import styles from "../_index.css";
 import stylesContactForm from "../components/contactForm.css";
@@ -36,7 +36,7 @@ export const meta: V2_MetaFunction = () => [
   {
     name: "description",
     content:
-      "Web development, SEO, and online marketing services for small businesses.",
+      "Transform your online presence with expert web development, SEO, and online marketing services tailored for small businesses. Enhance your digital footprint and reach your target audience effectively.",
   },
 ];
 
@@ -74,7 +74,11 @@ export default function Index() {
                 </a>
                 , owner/operator of
               </h3>
-              <img src={logo} className="Banner-logo" />
+              <img
+                src={logo}
+                className="Banner-logo"
+                alt="jm-web-development-logo"
+              />
               <h1 className="Banner-title">
                 Web Development <small>LLC</small>
               </h1>
