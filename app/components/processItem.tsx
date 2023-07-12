@@ -6,6 +6,7 @@ export interface ProcessItemProps {
   title: string;
   description: string[];
   photo: string;
+  photoAlt: string;
   advanceItem?: Function;
   next?: boolean;
   photoRef?: any;
@@ -13,6 +14,7 @@ export interface ProcessItemProps {
 
 export default function ProcessItem({
   photo,
+  photoAlt,
   description,
   advanceItem,
   next,
@@ -49,7 +51,7 @@ export default function ProcessItem({
         style={{ backgroundImage: `url(${photo})` }}
         ref={photoRef}
       >
-        {/* <IconSwitch iconName={iconName} scale={scale} /> */}
+        <span className="background-image" role="img" aria-label={photoAlt} />
       </div>
       <div className="ProcessItem-text">
         {description?.map((paragraph, index) => (

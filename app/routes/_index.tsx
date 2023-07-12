@@ -59,6 +59,11 @@ export default function Index() {
   return (
     <main>
       <div className="Banner" style={{ backgroundImage: `url(${computer})` }}>
+        <span
+          className="background-image"
+          role="img"
+          aria-label="main-banner"
+        />
         <div className="Banner-overlay">
           <div className="Banner-content">
             <div className="Banner-content-inner">

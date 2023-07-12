@@ -63,6 +63,7 @@ export default function ProcessTabLayout({
       <ProcessItem
         title={activeItem.title}
         photo={activeItem.photo}
+        photoAlt={activeItem.photoAlt}
         description={activeItem.description}
         advanceItem={advanceItem}
         next={activeIndex < processItems.length - 1}

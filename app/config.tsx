@@ -113,6 +113,7 @@ export const processItems: ProcessItemProps[] = [
       "My initial consultations are always free and come with no obligation. We can conduct our consultation by phone or video chat, or even in person if you're in the Tulsa area.",
     ],
     photo: consultation,
+    photoAlt: "consultation",
   },
   {
     title: "Development",
@@ -121,6 +122,7 @@ export const processItems: ProcessItemProps[] = [
       "At the end of this stage, I will deploy the initial design to a staging URL where you will be able to view it and give feedback. Then we'll move on to the third stage, Revision.",
     ],
     photo: development,
+    photoAlt: "development",
   },
   {
     title: "Revision",
@@ -129,6 +131,7 @@ export const processItems: ProcessItemProps[] = [
       "There is no rush to the revision process. We can spend as much time as we need to ensure the design meets your expectations and reflects your vision for your brand.",
     ],
     photo: revision,
+    photoAlt: "revision",
   },
   {
     title: "Deployment",
@@ -137,6 +140,7 @@ export const processItems: ProcessItemProps[] = [
       "If you already own a domain name, during this stage I'll ask you for the information and access I'll need to point it to your site. If you don't already own a domain you can have me purchase one for you; in this case I recommend that you come up with 2-3 options in case your first choice is already taken or prohibitively expensive to buy.",
     ],
     photo: deployment,
+    photoAlt: "deployment",
   },
   {
     title: "Support",
@@ -146,6 +150,7 @@ export const processItems: ProcessItemProps[] = [
       "If you choose not to sign up for my subscription, I will hand the hosting account over for you to take care of. Even in this case you're not alone! I'll still be available to answer questions or make updates for an additional fee based on time.",
     ],
     photo: support,
+    photoAlt: "support",
   },
 ];
 

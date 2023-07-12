@@ -57,6 +57,7 @@ export default function Route() {
     <div className="Process">
       <HalfBanner
         photo={processPhoto}
+        photoAlt="process-banner"
         text={"What to expect when we work together"}
       />
       <ProcessTabLayout scrollToForm={scrollToForm} />

@@ -70,12 +70,14 @@ export default function Route() {
             className="About-banner-image"
             style={{ backgroundImage: `url(${topeka})` }}
           >
+            <span className="background-image" role="img" aria-label="topeka" />
             <div className="About-banner-overlay" />
           </div>
           <div
             className="About-banner-image"
             style={{ backgroundImage: `url(${tulsa})` }}
           >
+            <span className="background-image" role="img" aria-label="tulsa" />
             <div className="About-banner-overlay" />
           </div>
         </div>

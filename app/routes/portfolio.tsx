@@ -36,6 +36,7 @@ export default function Route() {
     <div className="Portfolio">
       <HalfBanner
         photo={portfolio}
+        photoAlt="portfolio-banner"
         text={"Check out some of my past projects"}
       />
       <Outlet />
