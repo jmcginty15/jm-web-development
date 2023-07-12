@@ -56,7 +56,7 @@ export default function Route() {
   useEffect(() => {
     if (typeof data === "string")
       bioRef.current!.scrollIntoView({ behavior: "smooth", block: "center" });
-    else
+    else if (data)
       tabRef.current!.scrollIntoView({ behavior: "smooth", block: "center" });
   }, []);
 
