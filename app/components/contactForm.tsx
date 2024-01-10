@@ -124,9 +124,9 @@ export default function ContactForm({
         </h6>
         <h3 className="ContactForm-title">Consultations</h3>
         <h6>
-          I offer free consultations! If you're in the Tulsa area, I'd be happy
-          to meet up in person to discuss your project. Otherwise, a phone call
-          or video chat will work.
+          I offer free consultations! If you're in the Tulsa/Stillwater area,
+          I'd be happy to meet up in person to discuss your project. Otherwise,
+          a phone call or video chat will work.
         </h6>
       </div>
       <Form className="ContactForm-form" method="POST" onSubmit={handleSubmit}>

@@ -49,8 +49,8 @@ export default function Bio() {
           more about that.
         </p>
         <p className="Bio-text">
-          I live in Tulsa, Oklahoma with my wife Addie and soon-to-be-born first
-          child, along with our dog George and cats Mo and Lisa.
+          I live in rural Oklahoma with my wife Addie and daughter Katharin,
+          along with our dog George.
         </p>
         <Link className="Bio-button" to="/about?ref=bio">
           Learn more
